@@ -18,7 +18,6 @@ import sec2svg1 from '../svg/Home/sec2svg1.svg';
 import sec2svg1dark from '../svg/Home/sec2svg1dark.svg';
 import sec2svg2 from '../svg/Home/sec2svg2.svg';
 import sec2svg2dark from '../svg/Home/sec2svg2dark.svg';
-import homeImage from '../img/HomeMovie.jpg'
 
 
 function Home( { ThemeContext } ) {
@@ -175,27 +174,22 @@ function Home( { ThemeContext } ) {
 
   return (
 
-    <div className='flex flex-col' >
-      <div className={`relative pt-28 pb-36 text-white`}>
-        <div className={`absolute top-0 w-full h-screen bg-[#23272F] dark:bg-[#23272F]`}> 
-          <img src={homeImage} alt="" className={`w-full h-screen object-cover opacity-20`}/>
-        </div>
-        <div className='pt-20 flex flex-col gap-8 relative'>
-          {/* <div className='absolute left-0 top-60'>{<img onLoad={(target)=> {svgDivOnLoad (target)}} className='w-[400px] opacity-0' src={theme == 'dark' ? svg1dark : svg1} alt="" />}</div>
-          <div className='absolute left-0 top-60'>{<img onLoad={(target)=> {svgOnLoad (target , 'down')}} className='w-[400px] opacity-0' src={theme == 'dark' ? svg1dark : svg1} alt="" />}</div> */}
-          <div className='z-10 flex flex-col gap-8'>
-            <h2 className='text-7xl font-bold px-[400px]'>Choose your next movie and schedule to watch it</h2>
-            <p className='text-xl px-[500px]'>Communicate with cinephile people, see IMDB score of movies, genre, ... , and choose your next movie</p>
-            <div className='flex gap-4 justify-center items-center'>
-              <Secondbtn title={"View plans"} 
-              customFunction={() => {}} size={'medium'} clickAnimation={true}/>
-              <Mainbtn title={"Join Now !"} 
-              customFunction={() => {}} size={'medium'} clickAnimation={true}/> 
-            </div>
+    <div className='flex flex-col pt-20' >
+      <div className='pt-28 pb-48 m flex flex-col gap-8 relative'>
+        <div className='absolute left-0 top-60'>{<img onLoad={(target)=> {svgDivOnLoad (target)}} className='w-[400px] opacity-0' src={theme == 'dark' ? svg1dark : svg1} alt="" />}</div>
+        <div className='absolute left-0 top-60'>{<img onLoad={(target)=> {svgOnLoad (target , 'down')}} className='w-[400px] opacity-0' src={theme == 'dark' ? svg1dark : svg1} alt="" />}</div>
+        <div className='z-10 flex flex-col gap-8'>
+          <h2 className='text-7xl font-bold px-[400px]'>Choose your next movie and schedule to watch it</h2>
+          <p className='text-xl px-[500px]'>Communicate with cinephile people, see IMDB score of movies, genre, ... , and choose your next movie</p>
+          <div className='flex gap-4 justify-center items-center'>
+            <Secondbtn title={"View plans"} 
+            customFunction={() => {}} size={'medium'} clickAnimation={true}/>
+            <Mainbtn title={"Join Now !"} 
+            customFunction={() => {}} size={'medium'} clickAnimation={true}/> 
           </div>
-          {/* <div  className='absolute right-0 -top-2'>{<img onLoad={(target)=> {svgDivOnLoad (target)}} className='w-[475px] opacity-0' src={theme == 'dark' ? svg2dark : svg2} alt="" />}</div>
-          <div  className='absolute right-0 -top-2'>{<img onLoad={(target)=> {svgOnLoad (target , 'up')}} className='w-[475px] opacity-0' src={theme == 'dark' ? svg2dark : svg2} alt="" />}</div> */}
         </div>
+        <div  className='absolute right-0 -top-2'>{<img onLoad={(target)=> {svgDivOnLoad (target)}} className='w-[475px] opacity-0' src={theme == 'dark' ? svg2dark : svg2} alt="" />}</div>
+        <div  className='absolute right-0 -top-2'>{<img onLoad={(target)=> {svgOnLoad (target , 'up')}} className='w-[475px] opacity-0' src={theme == 'dark' ? svg2dark : svg2} alt="" />}</div>
       </div>
       <section id='home-sec1' className='flex flex-col gap-14 justify-center bg-[#F7F8F9] dark:bg-[#23272F] py-36'>
         <p className={`text-5xl font-semibold ${sec11IsVisible == true ? ('animate-[wiggle_2s] opacity-100') : 'opacity-0'}`}>Features</p>
@@ -228,14 +222,14 @@ function Home( { ThemeContext } ) {
       </section>
       <section  id='home-sec2' className=''>
 
-        {/* <div ref={sec2Ref} className={`flex flex-col  items-center justify-center gap-16 pt-44 pb-56 ${sec2IsVisible == true ? ('animate-[wiggle_1.5s] opacity-100') : 'opacity-0'}`}>
+        <div ref={sec2Ref} className={`flex flex-col  items-center justify-center gap-16 pt-44 pb-56 ${sec2IsVisible == true ? ('animate-[wiggle_1.5s] opacity-100') : 'opacity-0'}`}>
           <p className='text-5xl font-semibold'>Plans</p>
           <div  className={`flex items-center justify-center gap-6 px-40 `}>
             {Pricings.map(( item ,index ) => {
               return ( <PricingSmall key={index} isInvise={sec2IsVisible} name={item.name} discription={item.discription} options={item.options} price={item.price} color={item.color} scale={item.scale} badge={item.badge} />)
             })}
           </div>
-        </div> */}
+        </div>
         {/* <PricingSmall name={"Newbie"} discription={"For those people who rarely watch movies"}
         price={5}
         /> */}
