@@ -2,13 +2,9 @@ import { createContext, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 
-import Pricing from './pages/Pricing';
 import Home from './pages/Home';
-import ContactUs from './pages/ContactUs';
-import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Layout from './pages/Layout';
-import DownloadPage from './pages/DownloadPage';
 
 function App() {
 
@@ -39,14 +35,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout theme={ThemeContext} setTheme={setTheme}/>}>
             <Route index element={<Home ThemeContext={ThemeContext}/>} />
-            <Route path="pricing" element={<Pricing />} />
-            <Route path="contactus" element={<ContactUs />} />
-            <Route path="download" element={<DownloadPage />} />
-            <Route path="about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
   );
 }
 
