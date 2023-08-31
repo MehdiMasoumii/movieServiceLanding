@@ -22,6 +22,7 @@ import homeImage from '../img/HomeMovie.jpg'
 import movies1 from '../img/movies1.jpg'
 
 
+
 function Home( { ThemeContext } ) {
 
   const theme = useContext(ThemeContext);
