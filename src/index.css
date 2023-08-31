@@ -37,7 +37,7 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #F59E0B;
   border-radius: 3px;
 }
 .dark ::-webkit-scrollbar-thumb {
