@@ -197,7 +197,6 @@ function Home( { ThemeContext } ) {
 
   return (
 
-
     <div className='flex flex-col' >
       <div id='homePage' className={`relative w-full h-screen pt-28 pb-36 text-white`}>
         <div className={`absolute top-0 w-full h-screen bg-[#23272F] dark:bg-[#23272F]`}> 
@@ -216,8 +215,6 @@ function Home( { ThemeContext } ) {
           </div>
 
         </div>
-        <div  className='absolute right-0 -top-2'>{<img onLoad={(target)=> {svgDivOnLoad (target)}} className='w-[475px] opacity-0' src={theme == 'dark' ? svg2dark : svg2} alt="" />}</div>
-        <div  className='absolute right-0 -top-2'>{<img onLoad={(target)=> {svgOnLoad (target , 'up')}} className='w-[475px] opacity-0' src={theme == 'dark' ? svg2dark : svg2} alt="" />}</div>
       </div>
 
       <section id='home-whatIsBebin' className='flex flex-col w-full relative gap-14 justify-center bg-[#F7F8F9] dark:bg-[#191B21] py-32'>
@@ -271,9 +268,7 @@ function Home( { ThemeContext } ) {
       </section>
       <section  id='home-pricing' className=''>
 
-
         <Pricing />
-
 
       </section>
       <section id='home-critics' className='relative flex flex-col gap-10 bg-[#F7F8F9] dark:bg-[#23272F] py-36'>

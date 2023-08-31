@@ -25,6 +25,13 @@ function PageFooter( { isVisible , moreVisible } ) {
         { icon : <PinterestIcon /> , href : ''}  
     ]
 
+    function handleClickScroll( itemId ){
+        if (itemId) {
+          const element = document.querySelector(`#${itemId}`)
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
   return (
 
     <div className='h-[840px] flex flex-col'>
@@ -75,19 +82,16 @@ function PageFooter( { isVisible , moreVisible } ) {
             <div>
                     <ul className='flex gap-8'>
                         <li className=''>
-                            <Link className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>Pricing</Link>
+                            <button onClick={() => handleClickScroll( 'home-whatIsBebin' )} className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>What's Bebin</button>
                         </li>
                         <li className=''>
-                            <Link className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>Download Center</Link>
+                            <button onClick={() => handleClickScroll( 'home-features' )} className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>Features</button>
                         </li>
                         <li className=''>
-                            <Link className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>Contact us</Link>
+                            <button onClick={() => handleClickScroll( 'home-pricing' )} className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>Pricing</button>
                         </li>
                         <li className=''>
-                            <Link className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>About</Link>
-                        </li>
-                        <li className=''>
-                            <Link className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'></Link>
+                            <button onClick={() => handleClickScroll( 'home-critics' )} className='opacity-70 hover:underline hover:opacity-100 underline-offset-8'>Critics</button>
                         </li>
                     </ul>
             </div>
