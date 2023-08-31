@@ -37,12 +37,12 @@ function Navbar( { theme , setTheme , isNavigate , newHome } ) {
     const ListenNowItems = [
         {
             title : "Login",
-            href : "/accounts",
+            href : "",
             icon : <LoginIcon />
         },
         {
             title : "Sign up",
-            href : "/accounts",
+            href : "",
             icon : <SingUpIcon />
         }
     ]

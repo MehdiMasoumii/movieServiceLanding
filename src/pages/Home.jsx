@@ -220,7 +220,7 @@ function Home( { ThemeContext } ) {
         <p  className={`text-5xl font-semibold ${whatIsVisible == true ? ('animate-[wiggle_2s] opacity-100') : 'opacity-0'}`}>What is Be<span className='text-amber-500'>Bin</span> ?</p>
           <div className='overflow-hidden relative' >
             <div className={`relative h-[600px] left-[50%] overflow-hidden ${whatIsVisible == true ? ('animate-[wiggleLeft_5s] opacity-100') : 'opacity-0'}`}>
-              <div className='absolute w-full h-full z-20 bottom-0 left-0 bg-gradient-to-r dark:from-[#191B21] dark:to-[#ffffff10]'></div>
+              <div className='absolute w-full h-full z-20 bottom-0 left-0 bg-gradient-to-r from-[#F7F8F9] to-[#ffffff00] dark:from-[#191B21] dark:to-[#ffffff10]'></div>
               <img src={movies1} className={` object-cover `} alt="" />
             </div>
             <div ref={whatIsRef} className={`w-1/2 tracking-wide text-center absolute top-28 left-8 flex flex-col gap-6 ${whatIsVisible == true ? ('animate-[wiggleRight_3s] opacity-100') : 'opacity-0'}`}>

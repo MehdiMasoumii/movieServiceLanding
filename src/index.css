@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   scroll-behavior: smooth;
 }
@@ -17,7 +22,31 @@ code {
     monospace;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #16181C;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #F59E0B;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
