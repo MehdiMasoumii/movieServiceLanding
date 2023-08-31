@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import img1 from '../img/test.jpg'
 import { Link } from 'react-router-dom'
 
-function Customers({ name , id , profilePic , note }) {
+function CriticsSlider({ name , id , profilePic , note }) {
 
   return (
 
@@ -23,4 +23,4 @@ function Customers({ name , id , profilePic , note }) {
   )
 }
 
-export default Customers;
+export default CriticsSlider;
