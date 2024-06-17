@@ -1,7 +1,7 @@
 # This is my first ever project with react js!
 
 ### Landing page for a movie service.
-### I coded this project in 8/31/2023 when i was new to react. It was private, but i made it public.
+### I coded this project in 8/31/2023 when i was new to react. It was private, but i made it public. </br>
 
 
 # Getting Started with Create React App
